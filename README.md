@@ -2,7 +2,7 @@
 h1## Random password generator
 >This assigment was to develope a password generator page.
 ## Completed 
-Built a password generator capable of inputting symbols, numbers, and letters to a specific length. The password would be generated to the page.
+Built a password generator capable of inputting symbols, numbers, and letters to a specific length. The password would be generated to the page. I was able to place a maximum and minimum character requirment using a conditional. 
 ## Acceptance Criteria
 WHEN I click the button to generate a password
 THEN I am presented with a series of prompts for password criteria
