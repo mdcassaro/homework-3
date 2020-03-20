@@ -119,6 +119,7 @@ if(stringLengthUser < 128 && stringLengthUser >8){
     }else if(usernumbers === true && userSymbols === true && userletters === false){
             generateNumbsAndSymbols()
     }  
+    
    
     
 
@@ -138,7 +139,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
-//write generate password function my self.
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
