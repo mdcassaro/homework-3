@@ -102,23 +102,34 @@ if(stringLengthUser < 128 && stringLengthUser >8){
         
         
     }
-    if (userletters == true && userSymbols == true && usernumbers == true){
-        generatePassword()
+    function grouped(){
+
     
-    }else if(userletters === true && userSymbols == false && usernumbers == false){
-            generateLetters()
+        if (userletters == true && userSymbols == true && usernumbers == true){
+            generatePassword()
+        
+        }
+        if(userletters === true && userSymbols == false && usernumbers == false){
+                generateLetters()
+        
+        }
+        if (usernumbers === true && userletters === false && userSymbols == false){
+                generateNumbers()
+        }
+        if(userSymbols === true && usernumbers === false && userletters === false){
+                generateSymbols()
+        }
+        if(userletters === true && usernumbers === true && userSymbols === false){
+                generateNumbsAndLetters()
+        }
+        if(userletters === true && userSymbols===true && usernumbers ===false){
+                generateLettersAndSymbols()
+        }
+        if(usernumbers === true && userSymbols === true && userletters === false){
+                generateNumbsAndSymbols()
+        };  
+    }
     
-    }else if (usernumbers === true && userletters === false && userSymbols == false){
-            generateNumbers()
-    }else if(userSymbols === true && usernumbers === false && userletters === false){
-            generateSymbols()
-    }else if(userletters === true && usernumbers === true && userSymbols === false){
-            generateNumbsAndLetters()
-    }else if(userletters === true && userSymbols===true && usernumbers ===false){
-            generateLettersAndSymbols()
-    }else if(usernumbers === true && userSymbols === true && userletters === false){
-            generateNumbsAndSymbols()
-    }  
     
    
     
@@ -131,7 +142,7 @@ if(stringLengthUser < 128 && stringLengthUser >8){
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var password = grouped;
   var passwordText = document.querySelector("#password");
   
   
